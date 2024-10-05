@@ -102,6 +102,10 @@ public class User implements UserDetails {
         this.password = password;
     }
 
+    public List<Review> getUserReviews() {
+        return userReviews;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

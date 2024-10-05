@@ -14,6 +14,9 @@ public class Review {
     @ManyToOne
     @JoinColumn (name = "user_id")
     User user;
+    @ManyToOne
+    @JoinColumn(name = "movie_id")
+    Movie movie;
 
 
     public Review(Long id, String text) {
@@ -24,6 +27,14 @@ public class Review {
     public Review() {
     }
 
+
+    public User getUser() {
+        return user;
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
 
     public Long getId() {
         return id;
