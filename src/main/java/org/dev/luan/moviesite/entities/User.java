@@ -1,13 +1,12 @@
 package org.dev.luan.moviesite.entities;
 
 import jakarta.persistence.*;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+
 
 import java.util.*;
 
-@Entity (name = "tb_users")
-public class User implements UserDetails {
+@Entity (name = "tb_user")
+public class User   {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -33,36 +32,6 @@ public class User implements UserDetails {
         this.name = name;
         this.email = email;
         this.password = password;
-    }
-
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return getUserRoles();
-    }
-
-    @Override
-    public String getUsername() {
-        return getEmail();
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return UserDetails.super.isAccountNonExpired();
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return UserDetails.super.isAccountNonLocked();
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return UserDetails.super.isCredentialsNonExpired();
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return UserDetails.super.isEnabled();
     }
 
     public Set<Role> getUserRoles() {

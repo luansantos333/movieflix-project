@@ -4,10 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import org.springframework.security.core.GrantedAuthority;
 
-@Entity (name = "tb_roles")
-public class Role implements GrantedAuthority {
+@Entity (name = "tb_role")
+public class Role   {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
