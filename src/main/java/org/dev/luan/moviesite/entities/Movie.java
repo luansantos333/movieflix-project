@@ -16,6 +16,7 @@ public class Movie {
     private String subTitle;
     private Integer movieYear;
     private String imgUrl;
+    @Column (columnDefinition = "TEXT")
     private String synopsis;
 
     @OneToMany(mappedBy = "movie")
