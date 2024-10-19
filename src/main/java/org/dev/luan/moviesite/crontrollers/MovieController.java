@@ -1,6 +1,7 @@
 package org.dev.luan.moviesite.crontrollers;
 
 import org.dev.luan.moviesite.dtos.MovieDTO;
+import org.dev.luan.moviesite.dtos.MovieMinDTO;
 import org.dev.luan.moviesite.services.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -21,14 +22,15 @@ public class MovieController {
         this.service = service;
     }
 
-    @GetMapping
-    public ResponseEntity<Page<MovieDTO>> findAllMovies (Pageable p) {
 
-        Page<MovieDTO> movies = service.findAllMoviesO(p);
+
+    @GetMapping
+    public ResponseEntity<Page<MovieMinDTO>> findAllMoviesSortedByName (Pageable p) {
+
+        Page<MovieMinDTO> movies = service.findAllMoviesSortedByName(p);
         return ResponseEntity.ok(movies);
 
     }
-
 
 
 }
