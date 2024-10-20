@@ -21,7 +21,7 @@ public class MovieMinDTO {
 
 
 
-    public MovieMinDTO (MovieProjection projection) {
+    public MovieMinDTO(MovieProjection projection) {
         title = projection.getTitle();
         subTitle = projection.getSubTitle();
         movieYear = projection.getMovieYear();
