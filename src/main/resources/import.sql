@@ -51,4 +51,6 @@ INSERT INTO tb_movie (title, sub_title, movie_year, img_url, synopsis, genre_id)
 
 
 
-INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Eu gostei muito desse filme, nota 10!', 1, 2);
+INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Eu gostei muito desse filme, nota 10!', 1, 1);
+INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Eu gostei muito desse filme, nota 8!', 2, 1);
+
