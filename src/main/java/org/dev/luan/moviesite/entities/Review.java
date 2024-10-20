@@ -52,6 +52,13 @@ public class Review {
         this.text = text;
     }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setMovie(Movie movie) {
+        this.movie = movie;
+    }
 
     @Override
     public boolean equals(Object o) {
