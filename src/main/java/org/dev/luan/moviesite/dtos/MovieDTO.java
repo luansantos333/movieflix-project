@@ -1,7 +1,6 @@
 package org.dev.luan.moviesite.dtos;
 
 import org.dev.luan.moviesite.entities.Movie;
-import org.dev.luan.moviesite.repositories.projections.MovieProjection;
 
 public class MovieDTO {
 
