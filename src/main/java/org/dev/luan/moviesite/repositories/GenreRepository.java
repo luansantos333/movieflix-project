@@ -11,6 +11,8 @@ import java.util.List;
 @Repository
 public interface GenreRepository extends JpaRepository <Genre, Long> {
 
+    // listagem de todos os gênereros de filme
+
     @Query("SELECT obj FROM org.dev.luan.moviesite.entities.Genre obj ORDER BY obj.name")
     public List<Genre> listAllGenresPagedOrderedAlphabetically();
 
