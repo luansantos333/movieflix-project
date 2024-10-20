@@ -20,6 +20,8 @@ public class ReviewService {
         this.userService = userService;
     }
 
+    /*
+
     @Transactional
     public MovieReviewDTO addNewReview (ReviewDTO dto, Long id) {
 
@@ -39,6 +41,6 @@ public class ReviewService {
         review.setText(dto.getText());
 
     }
-
+*/
 
 }
