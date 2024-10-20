@@ -39,6 +39,7 @@ public class MovieController {
         return ResponseEntity.ok(movieInfoPlusReviewsWithUsers);
 
     }
+    /*
 
     @PostMapping ("{id}")
     public ResponseEntity<MovieReviewDTO> addNewReview (@RequestBody ReviewDTO review, @PathVariable (name = "movie") Long movieId ) {
@@ -47,7 +48,7 @@ public class MovieController {
 
     }
 
-
+*/
 
 
 }
